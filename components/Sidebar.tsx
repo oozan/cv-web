@@ -1,18 +1,10 @@
 // Sidebar.tsx
-import { useTheme } from "next-themes";
-import Image from "next/image";
 import { GiTie } from "react-icons/gi";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { FaRegEnvelope } from "react-icons/fa";
 
 const Sidebar = () => {
-  const { theme, setTheme } = useTheme();
-
-  const changeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
-
   return (
     <div className="flex flex-col items-center bg-white dark:bg-dark-500 p-4">
       <img
