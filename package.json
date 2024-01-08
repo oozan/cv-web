@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.2",
     "dom": "^0.0.3",
     "domino": "^2.1.6",
     "dompurify": "^3.0.6",

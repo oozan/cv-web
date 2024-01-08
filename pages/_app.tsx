@@ -1,11 +1,12 @@
 // _app.tsx
 import "../styles/globals.css"; // Include Tailwind CSS styles
-import Sidebar from "../components/Sidebar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Component {...pageProps} />
+      <SpeedInsights />
     </div>
   );
 }
