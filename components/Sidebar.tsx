@@ -48,12 +48,12 @@ const Sidebar = () => {
           </a>
         </div>
 
-        <div className="py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:bg-black-500 text-center">
-          <div className="flex items-center justify-center">
-            <GoLocation className="mr-2" /> <span>Helsinki, Finland </span>
+        <div className="p-4 my-6 bg-gray-200 dark:bg-dark-200 dark:bg-black-500 text-center">
+          <div className="flex items-center justify-center p">
+            <GoLocation className="mr-1" /> <span>Helsinki, Finland </span>
           </div>
-          <p className="my-2">oozayranci@gmail.com </p>
-          <p className="my-2">+358 41 488 9262 </p>
+          <p className="my-1">oozayranci@gmail.com </p>
+          <p className="my-1">+358 41 488 9262 </p>
         </div>
 
         {/* Email Button */}
