@@ -31,14 +31,6 @@ const Sidebar = () => {
           <span>Download Resume</span>
         </a>
 
-        <a
-          href="/assets/AdditionalFiles.zip"
-          download="AdditionalFiles.zip"
-          className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
-        >
-          <span>+ Additional Files</span>
-        </a>
-
         <div className="flex justify-around w-9/12 my-5 text-gray-200 md:w-full">
           <a href="https://www.linkedin.com/in/oozan/" target="_blank">
             <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
