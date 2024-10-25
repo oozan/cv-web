@@ -17,7 +17,7 @@ const Sidebar = () => {
         decoding="async"
       />
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
-        Senior Software Developer
+        Frontend Focused Software Developer
       </p>
 
       {/* Navigation Links */}
