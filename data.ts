@@ -9,13 +9,13 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Front End",
     about:
-      "As a frontend developer, I focus on building user-friendly and visually appealing interfaces. I enjoy turning design concepts into functional code using HTML, CSS, and JavaScript. React was the first library I worked with, and I’ve also used Next.js in professional environments to develop responsive, interactive web applications that work well across different devices",
+      "As a frontend developer, I focus on building user-friendly and visually appealing interfaces. I enjoy turning design concepts into functional code using HTML, CSS, and JavaScript and Typescript. React was the first library I worked with, and I’ve also used Next.js in professional environments to develop responsive, interactive web applications that work well across different devices",
   },
   {
     Icon: AiOutlineApi,
     title: "UI/UX",
     about:
-      "I have experience working closely with UI/UX designers to create user interfaces that are both functional and visually appealing. My focus is on transforming design concepts into responsive, user-friendly web applications that meet user needs and align with the intended design vision. I collaborate closely with designers using tools like Figma to explore and implement practical frontend workarounds, ensuring that solutions enhance the overall user experience while maintaining consistency and cohesion in the design.",
+      "I have experience working closely with UI/UX designers to create user interfaces that are both functional and visually appealing. My focus is on transforming design concepts into responsive, user-friendly web applications that meet user needs and align with the intended design vision. I collaborate closely with designers using tools like Figma to explore and implement practical frontend workarounds, ensuring that solutions enhance the overall user experience while maintaining consistency and cohesion in the design",
   },
   {
     Icon: FaServer,
