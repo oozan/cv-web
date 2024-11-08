@@ -15,7 +15,7 @@ export const services: Service[] = [
     Icon: AiOutlineApi,
     title: "UI/UX",
     about:
-      "I have experience working closely with UI/UX designers to develop user interfaces that are both functional and visually appealing. I focus on turning design concepts into responsive, user-friendly web applications, ensuring the final product meets user needs. My role involves collaborating to find practical solutions that enhance the overall user experience while maintaining consistency with the design vision",
+      "I have experience working closely with UI/UX designers to create user interfaces that are both functional and visually appealing. My focus is on transforming design concepts into responsive, user-friendly web applications that meet user needs and align with the intended design vision. I collaborate closely with designers using tools like Figma to explore and implement practical frontend workarounds, ensuring that solutions enhance the overall user experience while maintaining consistency and cohesion in the design.",
   },
   {
     Icon: FaServer,
