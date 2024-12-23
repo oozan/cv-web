@@ -40,14 +40,6 @@ const Sidebar = () => {
           </a>
         </div>
 
-        <div className="p-4 my-6 bg-gray-200 dark:bg-dark-200 dark:bg-black-500 text-center">
-          <div className="flex items-center justify-center p">
-            <GoLocation className="mr-1" /> <span>Helsinki, Finland </span>
-          </div>
-          <p className="my-1">oozayranci@gmail.com </p>
-          <p className="my-1">+358 41 488 9262 </p>
-        </div>
-
         {/* Email Button */}
         <button
           className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-gray-100 to-black hover:scale-105 focus:outline-none mb-2"
