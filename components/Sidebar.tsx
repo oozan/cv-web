@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <div className="flex flex-col items-center bg-white dark:bg-dark-500 p-4">
       <img
-        src="/images/ozan.jpeg"
+        src="/images/Ozan.jpeg"
         alt="avatar"
         className="mx-auto border rounded-full"
         width={128}
