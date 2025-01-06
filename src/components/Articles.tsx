@@ -30,7 +30,7 @@ const Articles = () => {
     
         Clojure’s concise syntax is approachable for beginners, yet its depth and flexibility can handle advanced use cases. Whether developing web applications, data transformation pipelines, or automation scripts, Clojure offers a unique blend of power and simplicity.`,
       tags: ["Clojure", "Functional Programming", "Lisp"],
-      date: "20 Dec 2024",
+      date: "20 Dec 2023",
     },
     {
       title: "Optimizing Performance with Next.js Middleware",
@@ -45,7 +45,7 @@ const Articles = () => {
     
         Whether you're building a content-heavy website, an e-commerce platform, or a SaaS product, leveraging middleware can significantly improve the user experience. It ensures that applications respond faster, remain secure, and handle scaling challenges with ease.`,
       tags: ["Next.js", "Performance", "Web Development"],
-      date: "5 Jan 2024",
+      date: "5 Jan 2023",
     },
   ];
 
