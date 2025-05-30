@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Profile from "../components/Profile";
 import Applications from "../components/Applications";
-import Articles from "../components/Articles";
 import Footer from "@/components/Footer";
 
 const Home: NextPage = () => {
@@ -13,9 +12,6 @@ const Home: NextPage = () => {
 
         {/* Applications Section */}
         <Applications />
-
-        {/* Articles Section */}
-        <Articles />
         <Footer />
       </main>
     </div>
