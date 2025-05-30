@@ -9,7 +9,7 @@ const Profile = () => {
           {/* Name and Title */}
           <h2>Ozan Özayranci</h2>
           <p className="text-lg text-gray-400 mb-6 w-[16rem]">
-            Software Developer & Designer
+            Software Engineer
           </p>
           {/* Profile Image */}
           <div className="w-40 h-40 relative overflow-hidden shadow-md border-4 border-gray-700">
