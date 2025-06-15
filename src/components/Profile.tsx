@@ -53,10 +53,9 @@ const Profile = () => {
 
           {/* Description */}
           <p className="text-gray-300">
-            I’m a software developer passionate about creating modern web
-            applications. I enjoy tackling challenges, building intuitive user
-            interfaces and developing solutions that are both practical and
-            scalable.
+            I am a software developer who loves building modern web apps. I
+            enjoy solving complex problems, creating easy-to-use interfaces and
+            making solutions that work well and can grow over time.
           </p>
           <a href="mailto:oozayranci@gmail.com" className="hover:text-white">
             Hire me!
