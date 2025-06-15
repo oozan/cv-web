@@ -10,9 +10,7 @@ const Profile = () => {
           <h2>Ozan Özayranci</h2>
           <p className="text-lg text-gray-400 mb-6 w-[16rem]">
             Software Engineer 
-            +358414889262 
-            oozayranci@gmail.com 
-            Helsinki
+  
           </p>
           {/* Profile Image */}
           <div className="w-40 h-40 relative overflow-hidden shadow-md border-4 border-gray-700">
