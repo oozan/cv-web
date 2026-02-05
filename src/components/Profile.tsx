@@ -41,8 +41,8 @@ const Profile = () => {
               Let&apos;s Talk
             </a>
             <a
-              href="/Ozan_Ozayranci_Resume.pdf"
-              download="Ozan_Ozayranci_Resume.pdf"
+              href="/OzanOzayranciResume.pdf"
+              download="OzanOzayranciResume.pdf"
               className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-xs uppercase tracking-[0.3em] text-muted transition hover:border-gold/40 hover:text-ink"
             >
               Download Resume
