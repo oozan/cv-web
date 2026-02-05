@@ -42,9 +42,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   key={link.href}
                   href={link.href}
                   className={`transition ${
-                    isActive
-                      ? "text-gold"
-                      : "text-muted hover:text-ink"
+                    isActive ? "text-gold" : "text-muted hover:text-ink"
                   }`}
                 >
                   {link.label}
@@ -52,9 +50,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
               );
             })}
             <a
-              href="/Ozan_Ozayranci_Resume.pdf"
+              href="/OzanOzayranciResume.pdf"
               className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-4 py-2 text-[0.65rem] uppercase tracking-[0.3em] text-gold transition hover:border-gold/70 hover:text-ink"
-              download="Ozan_Ozayranci_Resume.pdf"
+              download="OzanOzayranciResume.pdf"
             >
               Resume
               <span className="text-[0.6rem]">PDF</span>
