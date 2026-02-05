@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## 🌐 Live Site
 
-[cv-web-oozans-projects.vercel.app](https://cv-web-oozans-projects.vercel.app/)
+Website link: [cv-web-oozans-projects.vercel.app](https://cv-web-oozans-projects.vercel.app/)
 
 ---
 
