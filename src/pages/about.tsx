@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
     <section className="space-y-10">
@@ -6,8 +5,8 @@ export default function About() {
         <p className="text-xs uppercase tracking-[0.4em] text-gold/70">About</p>
         <h1 className="mt-4 text-4xl font-display md:text-5xl">About Me</h1>
         <p className="mt-6 text-lg text-muted">
-          Hello! I'm Ozan Özayranci, a passionate software developer specializing
-          in frontend and full-stack development.
+          Hello! I'm Ozan Özayranci, a passionate software developer
+          specializing in frontend and full-stack development.
         </p>
         <p className="mt-4 text-lg text-muted">
           I love creating elegant, user-friendly interfaces and innovative
