@@ -1,64 +1,98 @@
-const Applications = () => {
+interface ApplicationItem {
+  name: string;
+  subtitle: string;
+  description: string;
+  link: string;
+  tags: string[];
+}
+
+const applications: ApplicationItem[] = [
+  {
+    name: "TrafiAuth",
+    subtitle: "Secure gateway for microservices",
+    description:
+      "Reverse proxy with Traefik and a Go authentication service. Built to demonstrate secure routing, identity checks, and Docker-based deployments.",
+    link: "https://github.com/oozan/TrafiAuth",
+    tags: ["Go", "Traefik", "Docker"],
+  },
+  {
+    name: "News-feed",
+    subtitle: "Lightweight publishing flow",
+    description:
+      "A simple news reading and updating app that keeps teams informed with fast publishing and easy browsing.",
+    link: "https://github.com/oozan/news-feed",
+    tags: ["Web App", "Content", "Updates"],
+  },
+  {
+    name: "MyVet",
+    subtitle: "Clinic operations suite",
+    description:
+      "Veterinary clinic app designed to manage appointments, immunizations, and medical records in one streamlined workspace.",
+    link: "https://github.com/oozan/myvet",
+    tags: ["Scheduling", "Healthcare", "Records"],
+  },
+];
+
+interface ApplicationsProps {
+  showHeader?: boolean;
+}
+
+const Applications = ({ showHeader = true }: ApplicationsProps) => {
   return (
-    <section className="bg-gradient-to-b from-gray-700 to-gray-800 shadow-lg p-6 border border-gray-700">
-      <h2 className="text-2xl font-semibold mb-6">Applications</h2>
-      <div className="flex flex-col items-start space-y-6">
-        <div>
-          <h3 className="text-xl font-medium">
-            <a
-              href="https://github.com/oozan/TrafiAuth"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white font-medium transition-colors hover:text-gray-100"
-            >
-              TrafiAuth
-            </a>
-          </h3>
-          <p className="text-gray-300 mb-4">Reverse proxy with Traefik</p>
-          <p className="mb-4">
-            Secure Microservices with Traefik Gateway and Go Authentication
-            Service. This project showcases the implementation of an
-            authentication system using Go, Docker, and Docker Compose.
+    <section className="space-y-6">
+      {showHeader && (
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.4em] text-gold/70">
+              Selected Work
+            </p>
+            <h2 className="mt-3 text-3xl font-display md:text-4xl">
+              Applications
+            </h2>
+          </div>
+          <p className="max-w-sm text-sm text-muted">
+            A curated set of projects focused on clarity, scalability, and
+            meaningful user outcomes.
           </p>
         </div>
-        <div>
-          <h3 className="text-xl font-medium">
+      )}
+
+      <div className="grid gap-6 md:grid-cols-3">
+        {applications.map((app, index) => (
+          <article
+            key={app.name}
+            className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-soft transition hover:border-gold/40"
+          >
+            <div className="flex items-center justify-between text-[0.65rem] uppercase tracking-[0.3em] text-muted">
+              <span>{app.subtitle}</span>
+              <span>0{index + 1}</span>
+            </div>
+            <h3 className="mt-4 text-2xl font-display text-ink">
+              {app.name}
+            </h3>
+            <p className="mt-3 text-sm text-muted">{app.description}</p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {app.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[0.6rem] uppercase tracking-[0.25em] text-muted"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
             <a
-              href="https://github.com/oozan/news-feed"
+              href={app.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white font-medium transition-colors hover:text-gray-100"
+              className="mt-6 inline-flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.3em] text-gold/80 transition hover:text-gold"
             >
-              News-feed
+              View Repository
+              <span aria-hidden="true">→</span>
             </a>
-          </h3>
-          <p className="text-gray-300 mb-4">Simple news reading/updating app</p>
-          <p className="mb-4">
-            News-feed is a straightforward app designed for reading and updating
-            news. Users can browse the latest updates or add new articles. This
-            application aims to keep users informed with up-to-date news and
-            announcements. Additionally, it can be utilized by companies to
-            efficiently share news and updates with their employees.
-          </p>
-        </div>
-        <div>
-          <h3 className="text-xl font-medium">
-            <a
-              href="https://github.com/oozan/myvet"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white font-medium transition-colors hover:text-gray-100"
-            >
-              MyVet
-            </a>
-          </h3>
-          <p className="text-gray-300 mb-4">Veterinarian Clinic App</p>
-          <p className="mb-4">
-            MyVet is a veterinary clinic app designed for clinicians to
-            efficiently manage and record animal appointments, immunizations,
-            vaccines, and drug tests.
-          </p>
-        </div>
+            <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[radial-gradient(circle_at_center,rgba(214,179,106,0.2),transparent_70%)] opacity-0 blur-2xl transition group-hover:opacity-100" />
+          </article>
+        ))}
       </div>
     </section>
   );

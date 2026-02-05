@@ -7,31 +7,30 @@ interface ArticleProps {
 
 const Article = ({ title, description, tags, date }: ArticleProps) => {
   return (
-    <div className="flex items-start bg-gray-800 shadow-md border border-gray-700 p-4">
-      {/* Article Icon */}
-      <div className="w-12 h-12 bg-gray-700 flex items-center justify-center rounded-md mr-4">
-        <span className="text-gray-500">📰</span>
-      </div>
-
-      {/* Article Details */}
-      <div className="flex-grow">
-        <h3 className="text-lg font-semibold mb-1">{title}</h3>
-        <p className="text-gray-400 text-sm mb-2">{description}</p>
-        <div className="flex flex-wrap space-x-2">
-          {tags.map((tag, index) => (
-            <span
-              key={index}
-              className="text-xs text-gray-500 bg-gray-700 px-2 py-0.5 rounded-md"
-            >
-              #{tag}
-            </span>
-          ))}
+    <article className="rounded-[24px] border border-white/10 bg-white/5 p-5 shadow-soft">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <p className="text-[0.6rem] uppercase tracking-[0.3em] text-muted">
+            {date}
+          </p>
+          <h3 className="mt-2 text-xl font-display text-ink">{title}</h3>
         </div>
+        <span className="rounded-full border border-white/15 px-3 py-2 text-[0.6rem] uppercase tracking-[0.3em] text-muted">
+          Article
+        </span>
       </div>
-
-      {/* Article Date */}
-      <div className="text-sm text-gray-500">{date}</div>
-    </div>
+      <p className="mt-4 text-sm text-muted">{description}</p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        {tags.map((tag) => (
+          <span
+            key={tag}
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[0.6rem] uppercase tracking-[0.25em] text-muted"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+    </article>
   );
 };
 
