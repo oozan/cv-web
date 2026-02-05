@@ -3,6 +3,8 @@ interface ApplicationItem {
   subtitle: string;
   description: string;
   link: string;
+  demoLink?: string;
+  demoLabel?: string;
   tags: string[];
 }
 
@@ -16,12 +18,14 @@ const applications: ApplicationItem[] = [
     tags: ["Go", "Traefik", "Docker"],
   },
   {
-    name: "News-feed",
-    subtitle: "Lightweight publishing flow",
+    name: "PokeWar",
+    subtitle: "Pokémon battle experience",
     description:
-      "A simple news reading and updating app that keeps teams informed with fast publishing and easy browsing.",
-    link: "https://github.com/oozan/news-feed",
-    tags: ["Web App", "Content", "Updates"],
+      "A fun Pokémon battle app where you select your Pokémon, face off against an opponent, and see who wins. Built with Next.js, TypeScript, and Tailwind CSS.",
+    link: "https://github.com/oozan/pokewar",
+    demoLink: "https://pokewar.vercel.app",
+    demoLabel: "You can reach from here",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
   },
   {
     name: "MyVet",
@@ -81,15 +85,38 @@ const Applications = ({ showHeader = true }: ApplicationsProps) => {
                 </span>
               ))}
             </div>
-            <a
-              href={app.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.3em] text-gold/80 transition hover:text-gold"
-            >
-              View Repository
-              <span aria-hidden="true">→</span>
-            </a>
+            {app.demoLink ? (
+              <div className="mt-6 flex flex-wrap gap-4">
+                <a
+                  href={app.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.3em] text-gold/80 transition hover:text-gold"
+                >
+                  View Repository
+                  <span aria-hidden="true">→</span>
+                </a>
+                <a
+                  href={app.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.3em] text-muted transition hover:text-ink"
+                >
+                  {app.demoLabel ?? "Live Demo"}
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            ) : (
+              <a
+                href={app.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.3em] text-gold/80 transition hover:text-gold"
+              >
+                View Repository
+                <span aria-hidden="true">→</span>
+              </a>
+            )}
             <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[radial-gradient(circle_at_center,rgba(214,179,106,0.2),transparent_70%)] opacity-0 blur-2xl transition group-hover:opacity-100" />
           </article>
         ))}
